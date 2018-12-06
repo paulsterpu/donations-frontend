@@ -1,0 +1,19 @@
+@import "colors";
+@import "mixins";
+
+.mobileFilterAndOrderContainer {
+  width: 90%;
+  margin: auto;
+/*  height: 40px;*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid $lightGrey;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .mobileFilterAndOrderContainer {
+    display: none;
+  }
+}

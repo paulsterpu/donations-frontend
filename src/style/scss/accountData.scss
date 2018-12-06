@@ -1,0 +1,96 @@
+@import "mixins";
+@import "colors";
+
+.accountDataContainer {
+  width: 100%;
+  background-color: white;
+  border: 1px solid $lightGrey;
+  padding: 20px;
+  @include border-radius(5px);
+  display: flex;
+  flex-direction: row;
+}
+
+.myAccountImage {
+  border: 1px solid $grey;
+  width: 100px;
+  height: 100px;
+}
+
+.myAccountImageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+
+.changePictureButton {
+  width: 100px;
+  height: 44px;
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid $blue;
+  @include border-radius(5px);
+  color: $blue;
+  text-align: center;
+}
+
+.showPersonalDataContainer, .showPersonalDataFormContainer {
+  width: calc(100% - 120px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.accountDataForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.accountDataInputContainer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.accountDataInputContainer label {
+  width: 20%;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.accountDataInputContainer input {
+  width: 80%;
+  @include border-radius(5px);
+  padding: 6px 32px 6px 10px;
+  outline: none;
+  border: 1px solid $lightGrey;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.accountDataInputContainer input:focus {
+  border-color: black;
+}
+
+.personalDataListContainer {
+  width: 70%;
+  padding: 20px 0 0 0;
+}
+
+.editPersonalDataButtonContainer {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.personalDataList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personalDataList li {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,24 @@
+@import "mixins";
+@import "colors";
+
+.mobileFilterButtonContainer {
+  width: 130px;
+  height: 40px;
+  border: 1px solid $lightGrey;
+  @include border-radius(3px);
+ }
+
+.mobileFilterButtonTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.mobileFilterButtonBody {
+  font-size: 10px;
+  text-align: center;
+  margin: 0;
+
+}

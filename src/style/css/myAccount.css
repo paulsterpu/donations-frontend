@@ -1,0 +1,54 @@
+.myAccountContainer {
+  width: 1200px;
+  margin: auto;
+  top: 30px;
+  position: relative;
+  border: 2px solid #D3D3D3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  display: flex;
+  flex-direction: row; }
+
+.myAccountEntriesContainer {
+  width: 240px; }
+
+.myAccountEntries {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  margin: 0;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px; }
+
+.myAccountEntries li {
+  text-align: left;
+  color: #444444;
+  height: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  border: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; }
+
+.myAccountContentContainer {
+  width: 960px;
+  background-color: #e4f1f9;
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0; }
+
+.myAccountEntryTitle {
+  font-size: 20px;
+  font-weight: 700; }
+
+.myAccountContent {
+  width: 100%; }
+
+/*# sourceMappingURL=myAccount.css.map */

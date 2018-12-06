@@ -1,0 +1,102 @@
+@import 'mixins';
+@import 'colors';
+
+.donationsListContainer {
+  width: 960px;
+/*
+  (***)
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+*/
+}
+
+@media (max-width: 1280px) {
+  .donationsListContainer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .donationsListContainer {
+    width: calc(100% - 250px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .donationsListContainer {
+    width: calc(100% - 270px);
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+//this logic is for (***)
+
+/*
+!*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*!
+
+@media (min-width: 1281px) {
+
+}
+
+!*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*!
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .donationsListContainer {
+    margin: auto;
+  }
+}
+
+!*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*!
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .donationsListContainer {
+    justify-content: space-around;
+  }
+}
+
+!*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*!
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+!*
+  ##Device = Low Resolution Tablets, Mobiles (portrait)
+  ##Screen = B/w 481px to 767px
+*!
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .donationsListContainer {
+    justify-content: space-around;
+  }
+}
+
+!*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*!
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .donationsListContainer {
+    justify-content: space-around;
+  }
+}
+*/

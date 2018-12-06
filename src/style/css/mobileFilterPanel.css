@@ -1,0 +1,23 @@
+.mobileFilterPanelContainer {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  background-color: #D3D3D3;
+  transition: max-width 0.25s linear;
+  z-index: 9999; }
+
+.hiddenMobileFilterPanelContainer {
+  position: absolute;
+  max-width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #D3D3D3;
+  z-index: 9999; }
+
+.mobileFiltersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+/*# sourceMappingURL=mobileFilterPanel.css.map */

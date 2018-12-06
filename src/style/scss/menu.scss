@@ -1,0 +1,127 @@
+@import 'mixins';
+@import 'colors';
+
+.showMenuContainer, .showMobileMenuContainer {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 490px;
+  margin: auto;
+
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear, opacity 0.5s linear;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.showMobileMenuContainer {
+  top: 84px;
+  left: 0;
+}
+
+.hideMenuContainer {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 0;
+  margin: auto;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+  transition-delay: 0.5s;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.entriesContainer {
+  width: 240px;
+  height: 450px;
+  z-index: 2;
+  background-color: white;
+  @include box-shadow(-1px, 2px, 5px, #ccc);
+}
+
+.menuEntriesContainer {
+  list-style: none;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.menuEntriesContainer .entry:not(:first-child):not(:last-child):hover {
+  border-top: 1px solid $lightGrey;
+  border-bottom: 1px solid $lightGrey;
+}
+
+.menuEntriesContainer .entry:first-child:hover {
+  border-bottom: 1px solid $lightGrey;
+}
+
+.menuEntriesContainer .entry:last-child:hover {
+  border-top: 1px solid $lightGrey;
+}
+
+.mobileMenuOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  background-color: black;
+  z-index: 1;
+}
+
+.entry {
+  height: 8.33%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.entry:hover {
+  color: $lightBlue;
+}
+
+.entryLogo {
+  height: 50%;
+}
+
+.entryName {
+  margin-left: 10px;
+}
+
+.imagesContainer {
+  width: calc(100% - 240px);
+  height: 450px;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bookImageContainer {
+  @include background-image('../../images/bookBackground.png');
+}
+
+.clothesBackground {
+  @include background-image('../../images/clothesBackground.jpg');
+}
+
+/*
+@media (max-width: 767px) {
+  .showMenuContainer, .hideMenuContainer {
+    display: none;
+  }
+}
+*/
+

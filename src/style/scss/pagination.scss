@@ -1,0 +1,182 @@
+@import 'mixins';
+@import 'colors';
+
+.paginationContainer {
+  width: 100%;
+  height: 94px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.paginationRow{
+  width: 960px;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  @include box-shadow(1px, 1px, 3px, #ccc);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.paginationRow .firstPaginationCol, .paginationRow .secondPaginationCol{
+  height: 100%;
+}
+
+.paginationRow .firstPaginationCol {
+  padding: 10px 0 0 10px;
+}
+
+.paginationRow .secondPaginationCol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inactiveButtonPageNumber {
+  color: $lightGrey !important;
+  border: 1px solid $lightGrey !important;
+}
+
+.pageButtonContainer, .currentPageButton, .breadcrumbs {
+  width: 28px;
+  height: 30px;
+  border: 1px solid $blue;
+  @include border-radius(3px);
+
+  cursor: pointer;
+  margin-left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currentPageButton {
+  background-color: $blue;
+}
+
+.breadcrumbs {
+  border: 1px solid $lightGrey !important;
+}
+
+.currentPageButton p, .pageButtonContainer p {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.pageButtonContainer p {
+  color: $blue !important;
+}
+
+.breadcrumbs p {
+  color: $lightGrey !important;
+  font-size: 15px;
+}
+
+.previousPageContainer {
+  width: 125px;
+  height: 30px;
+  color: $blue;
+  border: 1px solid $blue;
+  @include border-radius(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  margin-left: 10px;
+}
+
+/////////////////////
+
+@media (min-width: 1281px) {
+
+  .paginationRow .secondPaginationCol {
+    margin-right: 10px;
+  }
+
+  .paginationRow {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .paginationRow .secondPaginationCol {
+    margin-right: 10px;
+  }
+
+  .paginationRow {
+    margin-left: auto;
+    //100% - 250px is the width of the donationsListContainer
+    //(100% - 250px - 765px) / 4 is the margin-left of each donationBlock
+    width: calc(100% - 250px - (100% - 250px - 765px) / 4 * 2);
+    margin-right: calc((100% - 250px - 765px) / 4);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .paginationRow .firstPaginationCol {
+    height: auto;
+  }
+
+  .paginationRow .secondPaginationCol{
+    height: 75%;
+    justify-content: center;
+  }
+
+  .paginationRow {
+    margin-left: auto;
+    width: calc(100% - 270px - (100% - 270px - 500px)/ 3 * 2);
+    margin-right: calc((100% - 270px - 500px)/ 3);
+
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 767px) {
+
+  .paginationRow .firstPaginationCol {
+    height: auto;
+  }
+
+  .paginationRow .secondPaginationCol{
+    height: 75%;
+    justify-content: center;
+  }
+
+  .paginationRow {
+    margin-left: auto;
+    width: calc(100% - (100% - 510px)/ 3 * 2);
+    margin-right: calc((100% - 510px)/ 3);
+
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 509px) {
+
+  .paginationRow .firstPaginationCol {
+    height: auto;
+  }
+
+  .paginationRow .secondPaginationCol{
+    height: 75%;
+    justify-content: center;
+  }
+
+  .paginationRow {
+    margin-left: auto;
+    width: calc(100% - (100% - 260px)/ 2 * 2);
+    margin-right: calc((100% - 260px)/ 2);
+
+    flex-direction: column;
+  }
+
+}

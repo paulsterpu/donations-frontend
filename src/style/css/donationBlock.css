@@ -1,0 +1,129 @@
+.donationBlockContainer {
+  width: 230px;
+  height: 450px;
+  margin-bottom: 10px;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+  -moz-box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+  position: relative;
+  display: inline-block;
+  /*  margin-left: 10px;*/ }
+
+.donationImage {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+.donationTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; }
+
+.donationTitle a {
+  text-decoration: none;
+  color: black; }
+
+.dueDateDonationLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px; }
+
+.dueDateDonation {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  width: 100%;
+  text-align: center; }
+
+.fulfilledDonation {
+  font-size: 14px;
+  font-weight: 700;
+  color: green;
+  width: 100%;
+  text-align: center; }
+
+.unfulfilledDonation {
+  font-size: 14px;
+  font-weight: 700;
+  color: red;
+  width: 100%;
+  text-align: center; }
+
+@media (min-width: 1281px) {
+  .donationBlockContainer:nth-child(4n), .donationBlockContainer:nth-child(4n+2), .donationBlockContainer:nth-child(4n+3) {
+    margin-left: calc((100% - 920px) / 3); } }
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .donationBlockContainer {
+    width: 255px; }
+
+  .donationBlockContainer {
+    margin-left: calc((100% - 765px) / 4); } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .donationBlockContainer {
+    width: 250px; }
+
+  .donationBlockContainer {
+    margin-left: calc((100% - 500px)/ 3); } }
+@media (min-width: 510px) and (max-width: 767px) {
+  .donationBlockContainer {
+    width: 255px; }
+
+  .donationBlockContainer {
+    margin-left: calc((100% - 510px) / 3); } }
+@media (max-width: 509px) {
+  .donationBlockContainer {
+    width: 260px; }
+
+  .donationBlockContainer {
+    margin-left: calc((100% - 255px) / 2); } }
+/*
+
+//this logic is for (***) inside donationsList.css, and is for the last row on min-width: 1025px
+
+@media (min-width: 1025px) {
+
+  //3 pe ultima linie
+  .donationBlockContainer:nth-child(4n+2):nth-last-child(2) {
+    border: 1px solid blue;
+    margin-left: calc((100% - 230*4px)/3);
+  }
+
+  .donationBlockContainer:nth-child(4n+3):last-child {
+    border: 1px solid orange;
+    margin-left: (calc((100% - 230*4px)/3));
+    margin-right: auto;
+  }
+
+
+  //doua pe ultima linie
+  .donationBlockContainer:nth-child(4n+2):nth-last-child(1) {
+    border: 1px solid blue;
+    margin-left: calc((100% - 230*4px)/3);
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .donationBlockContainer {
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .donationBlockContainer {
+    width: 260px;
+  }
+}*/
+
+/*# sourceMappingURL=donationBlock.css.map */

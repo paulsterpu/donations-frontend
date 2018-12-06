@@ -1,0 +1,75 @@
+.mainContainer {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.formContainer {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 5px #ccc;
+  -moz-box-shadow: 1px 2px 5px #ccc;
+  box-shadow: 1px 2px 5px #ccc; }
+
+.containerTitle {
+  text-align: center;
+  color: #005eb8; }
+
+.formTitle1 {
+  text-align: center;
+  color: #999a99; }
+
+.formTitle2 {
+  text-align: center;
+  font-size: 22px; }
+
+.labelWarningMessage {
+  color: #c00;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 2px; }
+
+.registerPasswordContainer {
+  width: 100%;
+  position: relative; }
+
+.submitButton {
+  width: 100%;
+  background-color: #005eb8;
+  border: 0;
+  margin: 0;
+  height: 45px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-top: 30px; }
+
+.submitButton:hover {
+  background-color: #005e80; }
+
+.submitButtonMessage {
+  color: white;
+  font-size: 14px;
+  font-weight: bold; }
+
+.registerSuccessMessage {
+  text-align: center; }
+
+.resendActivationEmail {
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none; }
+
+.resendActivationEmail:active {
+  color: #22a7f0; }
+
+.resendActivationEmailSuccess {
+  color: #22a7f0; }
+
+/*# sourceMappingURL=register.css.map */

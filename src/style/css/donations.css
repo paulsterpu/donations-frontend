@@ -1,0 +1,72 @@
+.donationsContainer {
+  width: 1200px;
+  margin: auto; }
+
+.donationsBodyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px; }
+
+.filtersContainer {
+  display: flex;
+  flex-direction: column; }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .donationsContainer {
+    width: 100%; }
+
+  .filtersContainer {
+    margin-left: auto; } }
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .donationsContainer {
+    width: 100%; }
+
+  .donationsBodyContainer {
+    justify-content: space-around; }
+
+  .filtersContainer {
+    margin-left: auto; } }
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .donationsBodyContainer {
+    justify-content: space-around; } }
+/*
+  ##Device = Low Resolution Tablets, Mobiles (portrait)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .donationsContainer {
+    width: 100%; }
+
+  .donationsBodyContainer {
+    justify-content: space-around; } }
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .donationsContainer {
+    width: 100%; }
+
+  .donationsBodyContainer {
+    justify-content: space-around; } }
+
+/*# sourceMappingURL=donations.css.map */

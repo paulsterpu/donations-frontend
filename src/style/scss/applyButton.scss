@@ -1,0 +1,35 @@
+@import 'mixins';
+@import 'colors';
+
+.applyButton {
+  width: 160px;
+  height: 32px;
+  margin: auto;
+  border: 1px solid $blue;
+  color: $blue;
+  background-color: white;
+  display: flex;
+  outline: none;
+  position: absolute;
+  bottom: 20px;
+
+  left: 50%;
+  @include transform(translateX(-50%));
+}
+
+.applyButton:hover, .applyButton:active {
+  background-color: $lightHoverBlue;;
+}
+
+.applyButton:active {
+  background-color: $lightBlue;;
+}
+
+.applyIcon {
+  height: 25px;
+  width: 25px;
+}
+
+.applyMessage {
+  margin: auto;
+}

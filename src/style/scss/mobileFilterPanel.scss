@@ -1,0 +1,30 @@
+@import "mixins";
+@import "colors";
+
+.mobileFilterPanelContainer {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  background-color: $lightGrey;
+  transition: max-width 0.25s linear;
+  z-index: 9999;
+}
+
+.hiddenMobileFilterPanelContainer {
+  position: absolute;
+  max-width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: $lightGrey;
+ // transition: max-width 0.25s linear, height 0s linear 0.25s;
+  z-index: 9999;
+
+}
+
+.mobileFiltersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+

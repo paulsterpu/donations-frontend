@@ -1,0 +1,30 @@
+.applyButton {
+  width: 160px;
+  height: 32px;
+  margin: auto;
+  border: 1px solid #005eb8;
+  color: #005eb8;
+  background-color: white;
+  display: flex;
+  outline: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.applyButton:hover, .applyButton:active {
+  background-color: #ebf5ff; }
+
+.applyButton:active {
+  background-color: #22a7f0; }
+
+.applyIcon {
+  height: 25px;
+  width: 25px; }
+
+.applyMessage {
+  margin: auto; }
+
+/*# sourceMappingURL=applyButton.css.map */

@@ -1,0 +1,27 @@
+$out_len: 8px;
+$in_len: 6px;
+
+.upArrowContainer {
+  width: 0;
+  height: 0;
+  border-left: $out_len transparent solid;
+  border-right: $out_len transparent solid;
+  border-bottom: $out_len black solid;
+  margin: 0;
+  margin-right: 5px;
+  position: relative;
+}
+
+.upArrowInnerContainer {
+  width: 0;
+  height: 0;
+  border: solid;
+  border-top: 0;
+  border-left: $in_len transparent solid;
+  border-right: $in_len transparent solid;
+  border-bottom: $in_len white solid;
+  position: absolute;
+  margin: 0;
+  left: -$in_len;
+  top: 2px;
+}

@@ -1,0 +1,136 @@
+.filterContainer {
+  width: 225px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-bottom: 20px; }
+
+.filterHeader {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; }
+
+.filterTitle {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 5px; }
+
+.filterBody {
+  overflow: hidden;
+  max-height: 100px;
+  transition: max-height 0.25s ease-in; }
+
+.contractedFilterBody {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease-out; }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /*  .filterContainer {
+      display: none;
+    }*/ }
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*  .filterContainer {
+      display: none;
+    }*/ }
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/*
+  ##Device = Low Resolution Tablets, Mobiles (portrait)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .filterContainer {
+    display: none; } }
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .filterContainer {
+    display: none; } }
+.mobileFilterContainer {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-bottom: 20px; }
+
+.filterHeader {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; }
+
+.filterTitle {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 5px; }
+
+.filterBody {
+  overflow: hidden;
+  max-height: 100px;
+  transition: max-height 0.25s ease-in; }
+
+.contractedFilterBody {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease-out; }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /*  .filterContainer {
+      display: none;
+    }*/ }
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*  .filterContainer {
+      display: none;
+    }*/ }
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/*
+  ##Device = Low Resolution Tablets, Mobiles (portrait)
+  ##Screen = B/w 481px to 767px
+*/
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/*# sourceMappingURL=filter.css.map */

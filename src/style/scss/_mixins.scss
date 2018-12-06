@@ -1,0 +1,38 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin background-image($url) {
+  background-image: url($url);
+  -moz-background-image: url($url);
+  -o-background-image: url($url);
+  -webkit-background-image: url($url);
+}
+
+@mixin box-shadow($hoff, $voff, $blur, $color) {
+  -webkit-box-shadow: $hoff $voff $blur $color;
+  -moz-box-shadow: $hoff $voff $blur $color;
+  box-shadow: $hoff $voff $blur $color;
+}
+
+@mixin inline-flex {
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}

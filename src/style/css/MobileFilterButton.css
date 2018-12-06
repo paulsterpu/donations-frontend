@@ -1,0 +1,21 @@
+.mobileFilterButtonContainer {
+  width: 130px;
+  height: 40px;
+  border: 1px solid #D3D3D3;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px; }
+
+.mobileFilterButtonTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 0; }
+
+.mobileFilterButtonBody {
+  font-size: 10px;
+  text-align: center;
+  margin: 0; }
+
+/*# sourceMappingURL=MobileFilterButton.css.map */

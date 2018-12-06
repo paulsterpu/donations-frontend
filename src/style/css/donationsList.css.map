@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,uBAAwB;EACtB,KAAK,EAAE,KAAK;EACd;;;;;IAKE;;AAGF,0BAA2B;EACzB,uBAAwB;IACtB,KAAK,EAAE,IAAI;AAIf,kDAAmD;EAEjD,uBAAwB;IACtB,KAAK,EAAE,kBAAkB;AAI7B,iDAAkD;EAEhD,uBAAwB;IACtB,KAAK,EAAE,kBAAkB;AAQ7B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAgEE",
+"sources": ["../scss/donationsList.scss"],
+"names": [],
+"file": "donationsList.css"
+}

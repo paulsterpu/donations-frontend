@@ -1,0 +1,15 @@
+.mobileFilterAndOrderContainer {
+  width: 90%;
+  margin: auto;
+  /*  height: 40px;*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid #D3D3D3;
+  background-color: white; }
+
+@media (min-width: 768px) {
+  .mobileFilterAndOrderContainer {
+    display: none; } }
+
+/*# sourceMappingURL=mobileFilterAndOrder.css.map */

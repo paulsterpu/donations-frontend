@@ -1,0 +1,23 @@
+.downArrowContainer {
+  width: 0;
+  height: 0;
+  border-left: 8px transparent solid;
+  border-right: 8px transparent solid;
+  border-top: 8px black solid;
+  margin: 0;
+  margin-right: 5px;
+  position: relative; }
+
+.downArrowInnerContainer {
+  width: 0;
+  height: 0;
+  border-bottom: 0;
+  border-left: 6px transparent solid;
+  border-right: 6px transparent solid;
+  border-top: 6px white solid;
+  position: absolute;
+  margin: 0;
+  left: -6px;
+  top: -8px; }
+
+/*# sourceMappingURL=downArrow.css.map */
